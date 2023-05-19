@@ -1,7 +1,7 @@
 # to get >> peer_owner_id
-data "aws_caller_identity" "current" {}
+data "aws_caller_identity" "account" {}
 
-default_vpc_id = "vpc-049695961c2b3023a"
+# default_vpc_id = "vpc-049695961c2b3023a"
 
 # using this we will get the data of default_vpc,
 # but we need to specify default_vpc.id, we are specifying using variable block
